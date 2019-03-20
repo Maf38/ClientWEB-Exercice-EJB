@@ -4,13 +4,13 @@
     Author     : gai
 --%>
 
-<%@page import="beans.ControleurRemote"%>
+<%@page import="ejb.ControleurRemote"%>
 <%@page import="beans.beanRelais"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
 // création du bean relai en passant le nom JDNI de l’interface remote
-beanRelais unBean = new beanRelais("/ejb/ControleurRemote");
+beanRelais unBean = new beanRelais("ejb/mafal/controleur");
 //récupération du proxy
 ControleurRemote stub = (ControleurRemote) unBean.getProxy() ;
 // appel d’une méthode quelconque

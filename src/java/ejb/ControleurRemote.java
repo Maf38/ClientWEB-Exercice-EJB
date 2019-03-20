@@ -1,4 +1,4 @@
-package beans;
+package ejb;
 
 import java.util.Map;
 import javax.ejb.Remote;
